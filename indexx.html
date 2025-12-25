@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Giới thiệu bản thân</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#fff5f5;
+}
+
+/* ===== MENU ===== */
+nav{
+    background:linear-gradient(90deg,#dc2626,#991b1b);
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    animation: slideDown 1s ease;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#ffe4e6;
+    letter-spacing:1px;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(120deg,#ef4444,#7f1d1d);
+    color:white;
+    animation: fadeIn 1.5s ease;
+}
+header h1{
+    animation: floatText 3s ease-in-out infinite;
+}
+header img{
+    width:180px;
+    border-radius:50%;
+    margin-top:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    animation: zoomRotate 2s ease;
+}
+
+/* ===== SECTION ===== */
+section{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    animation: slideUp 1s ease;
+    transition:0.4s;
+}
+section:hover{
+    transform:translateY(-8px);
+}
+
+h2{
+    color:#b91c1c;
+}
+h2::after{
+    content:"";
+    width:60px;
+    height:4px;
+    background:#dc2626;
+    display:block;
+    margin-top:8px;
+    border-radius:2px;
+    animation: growLine 1.5s ease;
+}
+
+/* ===== SỞ THÍCH CLICK ===== */
+details{
+    margin:15px 0;
+    padding:15px;
+    border-left:5px solid #dc2626;
+    border-radius:10px;
+    background:#fff1f2;
+    cursor:pointer;
+    transition:0.4s;
+}
+details[open]{
+    background:#fee2e2;
+}
+summary{
+    font-weight:bold;
+    font-size:18px;
+    color:#b91c1c;
+}
+details ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+details ul li{
+    margin:6px 0;
+    transition:0.3s;
+}
+details ul li:hover{
+    color:#dc2626;
+    transform:translateX(10px);
+}
+
+/* ===== MỤC TIÊU ===== */
+.goal{
+    border-left:8px solid #dc2626;
+    background:linear-gradient(120deg,#fff1f2,#ffffff);
+    animation:pulse 2s infinite;
+}
+
+/* ===== VIDEO ===== */
+video{
+    display:block;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ===== LINK ===== */
+a{
+    color:#dc2626;
+    font-weight:bold;
+}
+a:hover{
+    color:#7f1d1d;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#fee2e2;
+    color:#7f1d1d;
+    font-weight:bold;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+@keyframes slideUp{
+    from{transform:translateY(40px); opacity:0}
+    to{transform:translateY(0); opacity:1}
+}
+@keyframes slideDown{
+    from{transform:translateY(-100%)}
+    to{transform:translateY(0)}
+}
+@keyframes zoomRotate{
+    from{transform:scale(0) rotate(-180deg); opacity:0}
+    to{transform:scale(1) rotate(0); opacity:1}
+}
+@keyframes floatText{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-10px)}
+}
+@keyframes growLine{
+    from{width:0}
+    to{width:60px}
+}
+@keyframes pulse{
+    0%{box-shadow:0 0 0 rgba(220,38,38,0.4)}
+    50%{box-shadow:0 0 20px rgba(220,38,38,0.6)}
+    100%{box-shadow:0 0 0 rgba(220,38,38,0.4)}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#sothich">Sở thích</a>
+    <a href="#muctieu">Mục tiêu</a>
+    <a href="#video">Video</a>
+    <a href="#lienhe">Liên hệ</a>
+</nav>
+
+<header>
+    <h1>Xin chào, tôi là Tô Tuấn Khôi</h1>
+    <p>Học sinh | Đam mê công nghệ | Thiết kế website</p>
+    <img src="anh.jpg" alt="Ảnh đại diện">
+</header>
+
+<section id="gioithieu">
+<h2>👤 Giới thiệu bản thân</h2>
+
+<ul>
+    <li><strong>Tôi là Tô Tuấn Khôi</strong>.</li>
+    <li>Học sinh lớp <strong>12A4</strong>, trường <strong>THPT Hòn Gai</strong>.</li>
+    <li>
+        <strong>Thành tựu:</strong>  
+        Giải khuyến khích học sinh giỏi cấp tỉnh.
+    </li>
+</ul>
+
+<p>
+</p>
+
+</section>
+
+
+<section id="sothich">
+<h2>🎯 Sở thích</h2>
+
+<h3>🎮 ⚽ Chơi game và đá bóng</h3>
+<ul>
+    <li>Tôi thường chơi game và đá bóng sau giờ học để giải trí và giảm stress.</li>
+    <li>Tôi là một fan của <strong>Manchester United</strong> và đội tuyển Liên Quân <strong>FPT Flash</strong>.</li>
+</ul>
+
+<h3>🎧 Nghe nhạc</h3>
+<ul>
+    <li>Tôi thích nghe những bài hát nhẹ nhàng để thư giãn.</li>
+    <li>
+        Bài hát tôi nghe nhiều nhất:
+        <br>
+        <!-- nhạc.mp3 -->
+        <audio controls>
+            <source src="baihat.mp3" type="audio/mpeg">
+        </audio>
+    </li>
+</ul>
+
+<h3>📚 💻 Xem video về khoa học và lịch sử thế giới</h3>
+<ul>
+    <li>Tôi thường xem để tăng thêm hiểu biết về khoa học và lịch sử thế giới.</li>
+    <li>
+        Một số kênh tôi hay xem:
+        <a href="https://www.youtube.com/@ezsu" target="_blank">Kênh YouTube lịch sử </a>
+<br>
+<a href="https://www.youtube.com/@VFacts" target="_blank">Kênh YouTube Khoa học </a>
+
+    </li>
+</ul>
+
+</section>
+
+
+</section>
+
+
+</section>
+<section id="kỉ niệm">
+<h2>🎬 Kỉ niệm cấp 3</h2>
+<video width="520" controls>
+    <source src="clipa4.mp4" type="video/mp4">
+</video>
+</section>
+
+<section id="muctieu" class="goal">
+<h2>🎓 Mục tiêu trong tương lai</h2>
+<ul>
+    <li>Đỗ nguyện vọng 1 – Đại học Bách khoa Hà Nội, ngành Tự động hóa</li>
+    <li>Đạt 28+ điểm kỳ thi THPT Quốc gia</li>
+    <li>Đạt 75+ điểm kỳ thi TSA</li>
+</ul>
+</section>
+
+
+<section id="lienhe">
+<h2>🔗 Liên hệ</h2>
+<p>
+<a href="https://www.facebook.com/share/1DLWfoqQFw/?mibextid=wwXIfr" target="_blank">Facebook</a> |
+</p>
+</section>
+
+<footer>
+© 2025 – Website giới thiệu bản thân
+</footer>
+
+<!-- JS: CHỈ MỞ 1 SỞ THÍCH -->
+<script>
+const detailsList = document.querySelectorAll("#sothich details");
+
+detailsList.forEach(detail => {
+    detail.addEventListener("toggle", () => {
+        if (detail.open) {
+            detailsList.forEach(other => {
+                if (other !== detail) {
+                    other.removeAttribute("open");
+                }
+            });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
